@@ -28,29 +28,46 @@ public class LogicalOperation {
     public void getNumaratoareParametersCompared(int x, int y) {
         x = 2;
         y = 6;
-        if (x < y) {
-            while (x > y) {
-                System.out.println(x);
-                x++;
-            }
 
-        } else {
-            while (x < y) {
+        while (x > y) {
+            if (x < y) {
+                System.out.println(x);
+            } else {
                 System.out.println(y);
-                y--;
             }
         }
     }
 
-    public void getEnumerationEvenNumbers(int x, int y) {
+    public void getEnumerationEvenNumbers ( int x, int y){
 
-        while (x < y) {
+        while (x <= 100) {
             if (x % 2 == 0) {
                 System.out.println(x);
-                x++;
-            }
 
+            }
+            x++;
         }
     }
-}
+            public void getEnumerationOddNumbers( int x, int y){
+                while (x <= 100) {
+                    if (x % 2 != 0) {
+                        System.out.println(x);
+                    }
+                    x++;
+                }
+            }
+            public float AverageFromInterval(int start, int max){
+        int x=start;
+        x=99;
+        max=8899;
+        float sum=0;
+        int count=0;
+        while(x<=max){
+            sum=sum + x;
+            count++;
+        }
+        return sum;
+            }
 
+
+        }
