@@ -56,7 +56,7 @@ public class LogicalOperation {
                     x++;
                 }
             }
-            public float AverageFromInterval(int start, int max){
+            public float getAverageFromInterval(int start, int max){
         int x=start;
         x=99;
         max=8899;
@@ -68,6 +68,32 @@ public class LogicalOperation {
         }
         return sum;
             }
+            public float gerAverageDivisibleBySeven(int start,int max){
+                int x= start;
+                float sum =0;
+                int count=0;
+                while(x<=max){
+                    if(x%7==0){
+                        sum=sum + x;
+                        count++;
+                    }
+                    x++;
+                }
+                return sum/count;
+    }
+    public void getFibonacii(int count, int x,int y){
+        count=20;
+        x=0;
+        y=1;
+        int i=1;
+        while(i<=count){
+            System.out.println(x+" ");
+            int sumOfPrevTwo=x+y;
+            x=y;
+            y=sumOfPrevTwo;
+            i++;
+        }
+    }
 
 
         }

@@ -14,7 +14,11 @@ public class Main {
         System.out.println("Exercitiul 6:");
         op.getEnumerationOddNumbers(1,100);
         System.out.println("Exercitiul 7:");
-        op.AverageFromInterval(99,8899);
+        System.out.println(op.getAverageFromInterval(99,8899));
+        System.out.println("Exercitiul 8: "+ op.gerAverageDivisibleBySeven(7,100));
+        System.out.println("Exercitiul 9: ");
+        op.getFibonacii(20,0,1);
+
     }
 
 }
